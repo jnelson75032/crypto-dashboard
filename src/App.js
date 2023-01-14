@@ -1,5 +1,6 @@
 import "./styles.css";
 import { useEffect, useState } from "react";
+
 // Use this API
 // https://api2.binance.com/api/v3/ticker/24hr
 
@@ -12,7 +13,9 @@ import { useEffect, useState } from "react";
 
 export default function App() {
   // 1. STATE AND USEEFFECT HERE
-
+  useEffect(() => {
+    
+  }, [])
   // 2. How will you "Pull out" the symbols we need?
 
   // 3. ...and then store them in state?
@@ -29,12 +32,14 @@ export default function App() {
       <div className="main-content">
         <h2>Today's cryptocurrency prices</h2>
         <table>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>24h %</th>
-          </tr>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>24h %</th>
+            </tr>
+          </thead>  
           {/* 3. Display data here... */}
           {/* HINT: Map to JSX */}
 
